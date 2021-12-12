@@ -3,9 +3,9 @@ import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
 
 
 export const client = new ApolloClient({
-    link: new HttpLink({
-      uri: '/.netlify/functions/faunadb',
-      fetch,
-    }),
-    cache: new InMemoryCache()
-  });
+  link: new HttpLink({
+    uri: '/.netlify/functions/faunadb',
+    fetch,
+  }),
+  cache: new InMemoryCache()
+});
